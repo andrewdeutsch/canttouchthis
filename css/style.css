@@ -1,0 +1,248 @@
+#block {
+  text-align: center;
+  z-index: 4;
+  position: fixed;
+  bottom: 36%;
+  right: 32%;
+  width: 40%;
+  height: 32%;
+  /* margin-left: auto;
+  margin-right: auto; */
+  background-color: #e01933;
+  display: none;
+}
+#block:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+ }
+#cameraClicker{
+ left:40%;
+ bottom: 5%;
+ width: 23%;
+ z-index: 8;
+ display: block;
+ position: fixed;
+}
+
+#stop{
+  margin: auto;
+  display: block;
+  position: fixed;
+  width:100%;
+  top:0;
+   z-index: 5;
+}
+#name{
+  display: block;
+  position: fixed;
+  width:100%;
+  bottom:0;
+   z-index: 5;
+}
+ #cancelText {
+   margin-left: auto;
+   margin-right: auto
+   padding-top: 10%;
+   padding-bottom: 15%;
+   font-family: 'Open Sans 600', sans-serif;
+   font-weight: 400;
+   color: white;
+   font-size: .8em;
+   position: relative;
+   text-decoration: underline;
+ }
+#container {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100%;
+  width: 100%;
+}
+
+#download{
+  display: none;
+  bottom: 20%;
+  left: 42%;
+  width: 20%;
+  z-index: 4;
+  position: absolute;
+  height: 20%;
+}
+#fbLogo {
+  display: inline-block;
+  width: 35%;
+  position: relative;
+  padding-bottom: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginBtn {
+  width: 70%;
+  height: 30%;
+  font-size: 1.25em;
+  left: 15%;
+  bottom: -60%;
+  z-index: 5;
+  display: none;
+  position: relative;
+}
+@media only screen and (orientation: portrait) {
+  #landscapeMode {
+    display: none;
+  }
+}
+@media only screen and (orientation: landscape) {
+  #landscapeMode {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 33pt;
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: black;
+    width:100%;
+    height:100%;
+    z-index: 5;
+  }
+  #landscapeText {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 33pt;
+    text-align: center;
+    top: 40%;
+    display: block;
+    position: relative;
+  }
+}
+
+#mc1 {
+  z-index:7;
+  position: fixed;
+  bottom: 33%;
+  left:0;
+  width:33%
+
+}
+#mc2 {
+  z-index:7;
+  position: fixed;
+  bottom: 33%;
+  right:0;
+  width:33%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+
+}
+
+#shareBtn {
+  max-width: 70%;
+  display: none;
+  padding-left: 15%;
+  bottom: 20%;
+  z-index: 4;
+  position: fixed;
+}
+
+#sharethis-inline-share-buttons{
+  opacity: 0;
+  z-index: 4;
+  position: absolute;
+}
+#shareThis {
+  z-index:3;
+  position: fixed;
+  left:38%;
+  bottom: 20%;
+  width: 40%;
+  height: 20%;
+}
+#shareText {
+  margin-left: 0.2em;
+  padding-bottom: 10%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 11pt;
+  position: relative;
+}
+
+#shapShot {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+}
+#status {
+  z-index:4;
+  position:relative;
+}
+#twitterLogo {
+  display: inline-block;
+  width: 12%;
+  position: relative;
+  padding-bottom: 2.25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#video {
+  min-width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1;
+  display: block;
+}
+.warning {
+  color: red;
+  font-weight: 400;
+  visibility: hidden;
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  #cancelText {
+    margin-left: auto;
+    margin-right: auto
+    font-family: 'Open Sans 600', sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    text-decoration: underline;
+  }
+  #shareText {
+    margin-left:0.2em;
+    padding-bottom: 2%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: white;
+    font-size: 22pt;
+    position: relative;
+  }
+}
+#successText {
+  display: none;
+  margin-left:0.2em;
+  padding-bottom: 2%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 12pt;
+  position: relative;
+}

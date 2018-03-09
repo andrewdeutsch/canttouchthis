@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+ *  Copyright (c) 2015 The WebRTC project authors. All Rights Reserved.
+ *
+ *  Use of this source code is governed by a BSD-style license
+ *  that can be found in the LICENSE file in the root of the source
+ *  tree.
+-->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, height=device-height, user-scalable=yes, initial-scale=1, maximum-scale=1">
+
+  <!-- <meta itemprop="image" content="../../../images/webrtc-icon-192x192.png"> -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta id="theme-color" name="theme-color" content="#ffffff">
+  <meta property="og:type" content="image" />
+  <meta property="og:title" content="Can't touch this" />
+  <meta property="og:description" content="" />
+  <!-- <meta property="og:image" content="https://pbs.twimg.com/media/DWfdjTUX4AAdRqr.jpg:large" /> -->
+  <!-- <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# image: http://ogp.me/ns/image#">
+ <meta property="fb:app_id" content="302184056577324" />-->
+  <!-- <base target="_blank"> -->
+  <title>Future Forecast</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+  <script type="text/javascript" src="//platform-api.sharethis.com/js/sharethis.js#property=5a8c8281e3b02a00133b2d08&product=inline-share-buttons"></script>
+
+</head>
+
+<body>
+  <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      //local version
+      appId: '157775784925663',
+      //remote version
+      //appId            : '464477610635000',
+      //remote version
+      //appId            : '1300335440067028',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+
+
+</script>
+
+  <div id="fb-root"></div>
+    <div id="landscapeMode">
+      <div id="landscapeText">Rotate your phone to play.</div>
+    </div>
+    <div id="container">
+      <img src="images/clicker.png" id="cameraClicker">
+      <img src="images/stop.png" id="stop">
+      <img src="images/name.png" id="name">
+      <video id="video" autoplay playsinline ></video>
+      <canvas id="shapShot"></canvas>
+      <div id="status"></div>
+      <!-- share now cta -->
+      <div id="block">
+        <div id="successText"></div>
+        <div id="shareText">SHARE</div>
+        <img src="images/fb.png" id="fbLogo">
+          <!-- <img src="images/twitter.png" id="twitterLogo"> -->
+        <div id="cancelText">CANCEL</div>
+        <button onclick="login()" class="fb-share-button" id="loginBtn">Login</button>
+      </div>
+      <img src="images/mc.gif" id="mc1">
+      <img src="images/mc.gif" id="mc2">
+      <!-- <audio autoplay loop>
+        <source src="audio/Mc_Hammer_-_U_Cant_Touch_This.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio> -->
+
+
+      <div id="errorMsg">
+      </div>
+
+
+  <script src="js/index.js"></script>
+  <script src="js/canvas-to-blob.js"></script>
+  <script src="js/dom-to-image.js"></script>
+  <!-- <script src="js/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <!-- <script src="js/html2canvas.js"></script> -->
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+
+
+</body>
+</html>
